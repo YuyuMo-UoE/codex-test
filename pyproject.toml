@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sympy-integrator"
+version = "0.1.0"
+description = "A tiny SymPy-based integration package"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["sympy>=1.12"]
+
+[project.scripts]
+sympy-integrate = "sympy_integrator.cli:main"
